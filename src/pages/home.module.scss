@@ -1,27 +1,58 @@
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  background: black;
-  display: flex;
-  flex-flow: column wrap;
-}
 .logo {
-  margin-top: 5rem;
-  object-fit: none;
+  margin-bottom: 4.06rem;
+}
+.logo + ul {
+  list-style: none;
 }
 
-.posts {
-  margin: 5rem 0;
-  align-self: flex-start;
+.logo + ul + button {
+  background: none;
+  border: none;
+  p {
+    color: var(--highlight);
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+  }
+}
+
+.card {
+  margin-bottom: 3.125rem;
+
   a {
-    padding: 2rem;
-    display: block;
-    strong {
-      font-size: 2rem;
-    }
-    p {
-      padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    letter-spacing: -0.5px;
+    color: var(--heading);
+
+    max-width: 39.37rem;
+  }
+
+  & > p {
+    margin-top: 0.5rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      margin-right: 1.56rem;
+      margin-top: 1.5rem;
+
+      p {
+        font-size: 0.875rem;
+        line-height: 1.06rem;
+        font-weight: 400;
+        color: var(--info);
+        margin-left: 0.5rem;
+      }
     }
   }
 }
